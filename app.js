@@ -5,8 +5,8 @@ url += '?' + $.param({
 $.ajax({
   url: url,
   method: 'GET',
-}).then(function(){
-
-    
-})
-
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+});
