@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="javascript" type="text/js" href = "app.js">
     <script src="main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,19 +21,26 @@
   <form action="/action_page.php">
     <div class="form-group">
       <label for="searchTerm">Search Term:</label>
-      <input type="searchTerm" class="form-control" id="email" placeholder="Search Term" name="email">
+      <input type="text" class="form-control" id="email" placeholder="Search Term" name="email">
     </div>
     <div class="form-group">
       <label for="pwd">Number of Records to Retrieve:</label>
-      <input type="records" class="form-control" id="pwd" placeholder="Number of Records" name="pwd">
+      <input type="text" class="form-control" id="pwd" placeholder="Number of Records" name="pwd">
+      <br>
       <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <label for="startYear">Start Year (Optional)</label>
+            <input type="text" class="form-control" id="email" placeholder="Start Year" name="email">
           </div>
           <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            <label for="EndYear">End Year (Optional)</label>
+            <input type="text" class="form-control" id="pwd" placeholder="End Year" name="pwd">
           </div>
+          <button type="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-search"></span> Search
+          </button>
+          <button type="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-clear"></span> Clear Results
+          </button>
     </div>     
          </div>
     
