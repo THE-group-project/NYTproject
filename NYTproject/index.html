@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="javascript" type="text/js" href = "app.js">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron" Style="background-color:rgb(24, 24, 153);color:bisque;text-align: center;
+        font-family:'Times New Roman', Times, serif">
+            <h1>New York Times Search</h1>      
+        </div>
+        <h2>Search Parameters</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="searchTerm">Search Term:</label>
+      <input type="text" class="form-control" id="searchTerm" placeholder="Search Term" name="email">
+    </div>
+    <div class="form-group">
+      <label for="number-of-records">Number of Records to Retrieve:</label>
+      <input type="text" class="form-control" id="numberOfRecords" placeholder="Number of Records" name="pwd">
+      <br>
+      <div class="form-group">
+            <label for="startYear">Start Year (Optional)</label>
+            <input type="text" class="form-control" id="startYear" placeholder="Start Year" name="email">
+          </div>
+          <div class="form-group">
+            <label for="EndYear">End Year (Optional)</label>
+            <input type="text" class="form-control" id="EndYear" placeholder="End Year" name="pwd">
+          </div>
+          <button type="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-search"></span> Search
+          </button>
+          <button type="button" class="btn btn-info">
+            <span class="glyphicon glyphicon-clear"></span> Clear Results
+          </button>
+    </div>
+    <h2>Top Articles</h2> 
+    <iframe src="" style="height:150px;width:100%"></iframe>    
+         </div>
+    
+</body>
+</html>
